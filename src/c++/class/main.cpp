@@ -15,7 +15,6 @@ int main(void)
     dog.aoao();
     dog2.aoao();
 
-
     // 在堆中实例化
 
     // 创建一只猫
@@ -27,6 +26,14 @@ int main(void)
     delete cat;
     cat = NULL;
 
-    cout << "programe end " <<endl;
-    
-} 
+    cout << "programe end " << endl;
+
+    // 创建对象数组
+    chordata dogs[3];
+    dogs[0].aoao();
+
+    chordata *cats = new chordata[3];
+    cat->aoao();
+    delete[] cats;
+    cats = NULL;
+}

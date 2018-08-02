@@ -17,7 +17,7 @@ private:
   //公开 能被随意调用
 public:
   //构造函数 类实例化成对象时被调用
-  chordata(string _name);
+  chordata(string _name = "a");
 
   //复制函数 实例化对象被复制时调用
   chordata(const chordata &cho);
